@@ -97,7 +97,7 @@ spec:
           artifact_id: ${{ parameters.artifact_id }}
           java_package_name: ${{ parameters.java_package_name }}
           owner: ${{ parameters.owner }}
-          cluster: .apps.cluster-6k2gb.6k2gb.sandbox3079.opentlc.com
+          cluster: .apps.cluster-q7r57.q7r57.sandbox3072.opentlc.com
           destination: ${{ (parameters.repoUrl | parseRepoUrl).owner }}/${{ (parameters.repoUrl | parseRepoUrl).repo }}
           port: 8080
 
@@ -131,7 +131,7 @@ spec:
           source_repository: https://github.com/${{ (parameters.repoUrl | parseRepoUrl).owner }}/${{ (parameters.repoUrl | parseRepoUrl).repo }}
           repository_name: ${{ (parameters.repoUrl | parseRepoUrl).repo }}
           git_owner: ${{ (parameters.repoUrl | parseRepoUrl).owner }}
-          cluster: .apps.cluster-6k2gb.6k2gb.sandbox3079.opentlc.com
+          cluster: .apps.cluster-q7r57.q7r57.sandbox3072.opentlc.com
           namespace: ${{ parameters.component_id }}-dev
           image_host: ${{ parameters.image_host }}
           image_name: ${{ parameters.image_name }}
