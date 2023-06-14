@@ -7,14 +7,14 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io  
 spec:
-  project: default
+  project: janus
   source:
     repoURL: ${{ values.destination }}
     targetRevision: HEAD
     path: ./helm/build
   destination:
     server: https://kubernetes.default.svc
-    namespace: ${{ values.namespace }}
+    namespace: ${{ values.component_id }}-dev
   syncPolicy:
     automated: 
       prune: true
